@@ -1,0 +1,92 @@
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  height: calc(100vh - 5.31rem);
+
+  &.game-over {
+    display: none;
+  }
+
+  .cards-container {
+    height: 33rem;
+    align-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(9, 5rem);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0rem 0.5rem;
+
+    .card {
+      button {
+        width: 80px;
+        height: 120px;
+        border: none;
+        background-color: #f4f4f4;
+        border-radius: 0.5rem;
+        color: #333;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e5e5e5;
+        }
+
+        img {
+          padding-top: 5px;
+          width: 70px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .timer {
+    align-self: center;
+    margin: -28rem 0 0 4rem;
+
+    color: #333;
+
+    h2 {
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.game-over-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: calc(100vh - 5.31rem);
+
+  h1 {
+    font-weight: 500;
+  }
+
+  h2 {
+    font-weight: 500;
+  }
+
+  button {
+    width: 12rem;
+    height: 3rem;
+    margin-top: 2rem;
+
+    background-color: rgb(70, 138, 216);
+
+    border: none;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    color: white;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(60, 128, 206);
+    }
+  }
+}

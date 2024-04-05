@@ -1,0 +1,17 @@
+<div class="game {{ gameOver ? 'game-over' : '' }}">
+  <div class="cards-container">
+    <div class="card" *ngFor="let card of cards" (click)="flipCard(card.id)">
+      <button>
+        <img src="{{ card.flipped ? card.image : '' }}" />
+      </button>
+    </div>
+  </div>
+  <div class="timer">
+    <h2>Time: {{ displayTimer }}</h2>
+  </div>
+</div>
+<div class="game-over-message" *ngIf="gameOver">
+  <h1>Congratulations!</h1>
+  <h2>Your finished the game in {{ displayTimer }}.</h2>
+  <button (click)="restartGame()">Play Again</button>
+</div>

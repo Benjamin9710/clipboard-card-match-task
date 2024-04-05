@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 0 2em 0 1.5em;
+  height: 5.31rem;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.5rem;
+
+  border-bottom: 0.15rem solid #e5e5e5;
+
+  h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1rem 0 0 0;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0 0 1rem 0;
+  }
+}
